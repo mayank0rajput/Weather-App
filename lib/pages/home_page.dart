@@ -251,7 +251,7 @@ class _HomePageState extends State<HomePage> {
                                       : currTemp > 15 && currTemp < 30
                                           ? Colors.deepPurple
                                           : Colors.pink,
-                              fontSize: size.height * 0.10,
+                              fontSize: size.height * 0.08,
                             ),
                           ),
                         ),
@@ -451,7 +451,7 @@ class _HomePageState extends State<HomePage> {
                   horizontal: size.width * 0.02,
                 ),
                 child: Text(
-                  time,
+                  time.substring(0,3),
                   style: GoogleFonts.questrial(
                     color: isDarkMode ? Colors.white : Colors.black,
                     fontSize: size.height * 0.025,
@@ -477,7 +477,7 @@ class _HomePageState extends State<HomePage> {
                     '${kelvinToCelsius(minTemp).toStringAsFixed(2)}˚C',
                     style: GoogleFonts.questrial(
                       color: isDarkMode ? Colors.white38 : Colors.black38,
-                      fontSize: size.height * 0.025,
+                      fontSize: size.height * 0.022,
                     ),
                   ),
                 ),
@@ -492,7 +492,7 @@ class _HomePageState extends State<HomePage> {
                     '${kelvinToCelsius(maxTemp).toStringAsFixed(2)}˚C',
                     style: GoogleFonts.questrial(
                       color: isDarkMode ? Colors.white : Colors.black,
-                      fontSize: size.height * 0.025,
+                      fontSize: size.height * 0.022,
                     ),
                   ),
                 ),
